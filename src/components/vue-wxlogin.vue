@@ -1,0 +1,50 @@
+<template>
+  <div>
+    <iframe scrolling="no" width="300" height="400" frameBorder="0" allowTransparency="true" :src="setSrc"></iframe>
+  </div>
+</template>
+
+<script>
+export default {
+  data () {
+    return {
+      src: 'https://open.weixin.qq.com/connect/qrconnect?appid=wxe1f5def243e0390b&scope=snsapi_login&redirect_uri=https://abstest.tenpay.com/abs/author/callBack.do&state=0001&login_type=jssdk&self_redirect=default&style=black&href=./wx.css',
+      // https://open.weixin.qq.com/connect/qrconnect?appid=wxe1f5def243e0390b&scope=undefined&redirect_uri=undefined&state=&login_type=jssdk&self_redirect=default&style=black&href=
+    }
+  },
+  computed : {
+      setSrc () {
+          var _url = 'https://open.weixin.qq.com/connect/qrconnect?appid='+ this.appid
+              + '&scope=' + this.scope
+              + '&redirect_uri='  + this.redirect_uri
+              + '&state=' + this.state
+              + '&login_type=jssdk&self_redirect=default&style=' + this.theme
+              + '&href=' + this.href;
+          return _url;
+      },
+  },
+  props:{
+      //应用唯一标识，在微信开放平台提交应用审核通过后获得
+      appid : String,
+      //应用授权作用域，拥有多个作用域用逗号（,）分隔，网页应用目前仅填写snsapi_login即可
+      scope : String,
+      //重定向地址，需要进行UrlEncode
+      redirect_uri : String,
+      //用于保持请求和回调的状态，授权请求后原样带回给第三方。该参数可用于防止csrf攻击（跨站请求伪造攻击），建议第三方带上该参数，可设置为简单的随机数加session进行校验
+      state : {
+          type : String,
+          default: ''
+      },
+      //提供"black"、"white"可选，默认为黑色文字描述。详见文档底部FAQ
+      theme : {
+          type : String,
+          default: 'black'
+      },
+      // 自定义样式链接，第三方可根据实际需求覆盖默认样式。详见文档底部FAQ
+      href : {
+          type : String,
+          default: ''
+      },
+},
+}
+</script>
