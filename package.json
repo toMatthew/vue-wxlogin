@@ -2,8 +2,8 @@
   "name": "vue-wxlogin",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "toMatthew",
-  "private": true,
+  "author": "https://github.com/toMatthew",
+  "private": false,
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
@@ -52,6 +52,7 @@
     "node": ">= 4.0.0",
     "npm": ">= 3.0.0"
   },
+  "main": "src/components/vue-wxlogin.vue",
   "browserslist": [
     "> 1%",
     "last 2 versions",
