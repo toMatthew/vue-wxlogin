@@ -25,7 +25,7 @@ npm install vue-wxlogin --save-dev
 
 ``` bash
 import wxlogin from 'vue-wxlogin';
-Vue.component('my-component', {
+Vue.component('wxlogin', {
     components: {
         wxlogin
     }
