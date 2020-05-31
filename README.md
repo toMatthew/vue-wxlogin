@@ -1,6 +1,6 @@
 # vue-wxlogin
 
-> A Vue.js project
+>  a Vue compoment about WeChat，一个简单的微信登陆组件
 
 ## Build Setup
 
