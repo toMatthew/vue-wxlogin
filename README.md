@@ -1,6 +1,7 @@
 # vue-wxlogin
 
->  a Vue compoment about WeChat，一个简单的微信登陆组件
+>  a Vue compoment about WeChat，一个简单的微信登陆组件，方便组件化模块化工程化引入
+>  使用参数与https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419316505&token=30c517a18f2ddad39b899c7beb7163b98cc85d7c&lang=zh_CN 一致
 
 ## Build Setup
 
@@ -49,5 +50,3 @@ Vue.component('my-component', {
 ``` html
 <wxlogin :appid="appid" :scope="scope" :redirect_uri="redirect_uri"></wxlogin>
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
