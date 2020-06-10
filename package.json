@@ -1,7 +1,7 @@
 {
   "name": "vue-wxlogin",
-  "version": "1.0.0",
-  "description": "A Vue.js project",
+  "version": "1.0.2",
+  "description": "a Vue compoment about WeChat，一个简单的微信登陆组件，方便组件化模块化工程化引入",
   "author": "https://github.com/toMatthew",
   "private": false,
   "scripts": {
