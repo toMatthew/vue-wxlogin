@@ -8,7 +8,7 @@
 export default {
   data () {
     return {
-      src: 'https://open.weixin.qq.com/connect/qrconnect?appid=wxe1f5def243e0390b&scope=snsapi_login&redirect_uri=https://abstest.tenpay.com/abs/author/callBack.do&state=0001&login_type=jssdk&self_redirect=default&style=black&href=./wx.css',
+      // src: 'https://open.weixin.qq.com/connect/qrconnect?appid=wxe1f5def243e0390b&scope=snsapi_login&redirect_uri=https://abstest.tenpay.com/abs/author/callBack.do&state=0001&login_type=jssdk&self_redirect=default&style=black&href=./wx.css',
       // https://open.weixin.qq.com/connect/qrconnect?appid=wxe1f5def243e0390b&scope=undefined&redirect_uri=undefined&state=&login_type=jssdk&self_redirect=default&style=black&href=
     }
   },
@@ -18,7 +18,9 @@ export default {
               + '&scope=' + this.scope
               + '&redirect_uri='  + this.redirect_uri
               + '&state=' + this.state
-              + '&login_type=jssdk&self_redirect=default&style=' + this.theme
+              + '&login_type=' + this.login_type
+              + '&style=' + this.theme
+              + '&self_redirect=' + this.self_redirect
               + '&href=' + this.href;
           return _url;
       },
@@ -44,6 +46,16 @@ export default {
       href : {
           type : String,
           default: ''
+      },
+      // true：手机点击确认登录后可以在 iframe 内跳转到 redirect_uri，false：手机点击确认登录后可以在 top window 跳转到 redirect_uri。默认为 false。
+      self_redirect : {
+          type : String,
+          default: 'default'
+      },
+      // sdk的扩展字符串，但是在这里就默认了jssdk，暂时不建议修改
+      login_type : {
+          type : String,
+          default: 'jssdk'
       },
 },
 }
