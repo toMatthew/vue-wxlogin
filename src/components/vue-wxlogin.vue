@@ -1,6 +1,6 @@
 <template>
   <div>
-    <iframe scrolling="no" width="300" height="400" frameBorder="0" allowTransparency="true" :src="setSrc"></iframe>
+    <iframe sandbox="allow-scripts allow-top-navigation" scrolling="no" width="300" height="400" frameBorder="0" allowTransparency="true" :src="setSrc"></iframe>
   </div>
 </template>
 
