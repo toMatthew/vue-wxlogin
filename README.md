@@ -29,7 +29,7 @@ Vue.component('wxlogin', wxlogin);
 ```
 
 ## Nuxt SSR 
-e.g 
+<b> e.g </b> 
 1. 在nuxt.config.js
 ```
 plugins: ['src:'@/plugins/vue-wxlogin']
