@@ -25,11 +25,20 @@ npm install vue-wxlogin --save-dev
 
 ``` bash
 import wxlogin from 'vue-wxlogin';
-Vue.component('my-component', {
-    components: {
-        wxlogin
-    }
-});
+Vue.component('wxlogin', wxlogin);
+```
+
+## Nuxt SSR 
+e.g 
+1. 在nuxt.config.js
+```
+plugins: ['src:'@/plugins/vue-wxlogin']
+```
+2. 在plugins新建文件vue-wxlogin.js
+```
+import Vue from 'vue';
+import wxlogin from 'vue-wxlogin/src/components/vue-wxlogin.vue';
+Vue.component('wxlogin', wxlogin);
 ```
 
 ## Usage
