@@ -1,45 +1,23 @@
 {
-  "_from": "vue-wxlogin",
-  "_id": "vue-wxlogin@1.0.4",
-  "_inBundle": false,
-  "_integrity": "sha512-Ah5LaMYiODav24sis+4luTSr90Unr2pj9wI8rUtgBGhZ6JJVqBN+vARwnhDmvYDPn0gushkxMSaIeH9KhPOCUQ==",
-  "_location": "/vue-wxlogin",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "vue-wxlogin",
-    "name": "vue-wxlogin",
-    "escapedName": "vue-wxlogin",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
+  "name": "vue-wxlogin",
+  "version": "1.0.4",
+  "description": "a Vue compoment about WeChat，一个简单的微信登陆组件，方便组件化模块化工程化引入",
+  "author": "https://github.com/toMatthew",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toMatthew/vue-wxlogin.git"
   },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/vue-wxlogin/-/vue-wxlogin-1.0.4.tgz",
-  "_shasum": "ba26698df9fa4562246fdb200e2a99540c8d0e55",
-  "_spec": "vue-wxlogin",
-  "_where": "C:\\projects\\react\\node-xlsx",
-  "author": {
-    "name": "https://github.com/toMatthew"
+  "homepage": "https://github.com/toMatthew/vue-wxlogin#readme",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node build/dev-server.js",
+    "start": "node build/dev-server.js",
+    "build": "node build/build.js"
   },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not ie <= 8"
-  ],
-  "bugs": {
-    "url": "https://github.com/toMatthew/vue-wxlogin/issues"
-  },
-  "bundleDependencies": false,
   "dependencies": {
     "vue": "^2.4.2"
-  },
-  "deprecated": false,
-  "description": "a Vue compoment about WeChat，一个简单的微信登陆组件，方便组件化模块化工程化引入",
+    },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
@@ -60,18 +38,18 @@
     "friendly-errors-webpack-plugin": "^1.1.3",
     "html-webpack-plugin": "^2.28.0",
     "http-proxy-middleware": "^0.17.3",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "semver": "^5.3.0",
+    "shelljs": "^0.7.6",
     "opn": "^5.1.0",
     "optimize-css-assets-webpack-plugin": "^2.0.0",
     "ora": "^1.2.0",
     "rimraf": "^2.6.0",
-    "semver": "^5.3.0",
-    "shelljs": "^0.7.6",
     "url-loader": "^0.5.8",
     "vue-loader": "^13.0.4",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.4.2",
     "webpack": "^2.6.1",
-    "webpack-bundle-analyzer": "^3.6.0",
     "webpack-dev-middleware": "^1.10.0",
     "webpack-hot-middleware": "^2.18.0",
     "webpack-merge": "^4.1.0"
@@ -80,19 +58,10 @@
     "node": ">= 4.0.0",
     "npm": ">= 3.0.0"
   },
-  "homepage": "https://github.com/toMatthew/vue-wxlogin#readme",
-  "license": "MIT",
   "main": "src/components/vue-wxlogin.vue",
-  "name": "vue-wxlogin",
-  "private": false,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/toMatthew/vue-wxlogin.git"
-  },
-  "scripts": {
-    "build": "node build/build.js",
-    "dev": "node build/dev-server.js",
-    "start": "node build/dev-server.js"
-  },
-  "version": "1.0.4"
-}
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+ }
