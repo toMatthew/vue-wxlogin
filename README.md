@@ -2,7 +2,7 @@
 
 >  a Vue component about WeChat login；一个简单的微信登陆组件，方便组件化模块化工程化引入    
 >  no access to dom on the component, and no hook, so support srr; 组件中没有访问dom，并且没有使用hook，所以支持ssr    
->  refer to Vue2, Please use the <a href="https://github.com/toMatthew/vue-next-wxlogin">vue-next-wxlogin</a> plugin for vue3; 适用Vue2，vue3 请使用<a href="https://github.com/toMatthew/vue-next-wxlogin">vue-next-wxlogin</a>插件             
+>  refer to Vue2, Please use the <a href="https://github.com/toMatthew/vue-next-wxlogin">vue-next-wxlogin</a> plugin for vue3; 适用Vue2，Vue3 请使用<a href="https://github.com/toMatthew/vue-next-wxlogin">vue-next-wxlogin</a>插件             
 >  使用参数与微信官方文档一致
 url：https://open.weixin.qq.com/cgi-bin/showdocument?action=dir_list&t=resource/res_list&verify=1&id=open1419316505&token=30c517a18f2ddad39b899c7beb7163b98cc85d7c&lang=zh_CN
 
